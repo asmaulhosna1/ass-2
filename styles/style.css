@@ -4,3 +4,122 @@
     font-weight: 400;
     font-style: normal;
   }
+   /* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   } */
+  /* shared related style  */
+  .display-flex{
+    /* display: flex; */
+     } 
+     .header{
+      /* border: 1px solid blueviolet; */
+    }
+  /* header styles  */
+  .header, .navbar{
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .header{
+    position: relative;
+    padding: 0 2rem;
+    margin-top: 20px;
+
+  }
+  .navbar{
+   width: 100%; 
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+   /* margin: 20px 147px; */
+  }
+  .navbar .logo a{
+    font-size: 2rem;
+    font-weight: 500;
+    color: black; 
+    
+  }
+    .logo{ display: flex;
+      justify-content: center;
+     align-items: center;
+     gap: 16px;
+    }
+   
+ 
+  .navbar .links{
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+  }
+  #home{
+    font-weight: 700;
+    color: orange;
+
+  }
+  #about{
+    color: skyblue;
+  }
+  #facilities{
+    color: #05D4DF;
+  } 
+  #admission{
+    color: #5D58EF;
+  }
+  .navbar .toggle-btn{
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  .action-btn{
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    color: white;
+    background-color: orange;
+    border-radius: 12px;
+    cursor: pointer;
+  } 
+  hr{
+    width:95%;
+    height: 2px;
+    border: 0 none;
+    margin: 5px auto 20px auto; 
+    background-color: orange;
+    cursor: pointer;
+    display: none;
+
+  }
+  /* responsive */
+  @media screen and (max-width:576px){
+    .navbar .links,
+.navbar .action-btn{
+  display: none;
+}  
+.navbar{
+  width:100%;
+  padding: 0;
+} 
+
+}
+.logo a{
+  display: none;
+}
+.navbar .toggle-btn{
+  display: block;
+} 
+hr{
+  display: block;
+}
+
+  }
