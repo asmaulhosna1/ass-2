@@ -146,6 +146,103 @@
       .hero-img{
       max-width: 468px;
     }
+    /* curriculam section  */
+    .curriculams{
+      max-width: 1140px;
+      margin:0 auto;
+      background-image: url(../assets/bg.png);
+    }
+    .curriculam-container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     gap: 28px;
+        
+    }
+    .curriculam-img{
+      padding: 52px 115px 32px;
+    }
+    
+    .curriculam{
+      border: 1px solid seashell;
+      border: none;
+      max-height: 476px;
+      max-width: 368px;
+      border-radius: 18px;
+      box-shadow: 0 0 3px rgb(232, 212, 212);
+    }
+    .curriculam-head{
+      font-size: 2.88rem;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 80px;
+      }
+      .curriculam-title{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top:12px;
+      }
+      .curriculam-description{
+        font-weight: 500;
+        font-size: 1rem;
+        color: #808080;
+        margin-top: 33px;
+        margin-bottom: 10px;
+        padding-right: 20px;
+        padding-bottom:20px;
+      }
+      .button-primary{
+        font-size: 1rem;
+        font-weight: 700;
+        border: none;
+        background: none;
+        padding-bottom: 20px;
+      }
+      .s-1{
+        color: #64C8FF;
+      }
+       .s-2{
+      color: #F0AA00;
+      }
+      .s-3{
+     color: #8700FF;
+      }
+      .bg-color-1{
+        background-color: #DEF5FF;
+        background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+        
+      }
+      .bg-color-2{
+      background-color: #FFF4DC;
+      background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255)
+      }
+      .bg-color-3{
+      background-color: #F2E8FF;
+      background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+      }
+      .icon{
+        display: flex;
+       justify-content: center;
+        text-align: center;
+         align-items: center; 
+        margin-top: 80px;
+        gap:10px;
+
+        
+       
+      }
+      .icon-1{
+        height: 60px;
+        width: 60px;
+        border:1px solid #64C8FF;
+        background-color: orange;
+       text-align: center;
+       border-radius: 50%;
+       padding-top: 30px;
+      }
+
 
 
   /* responsive */
@@ -204,4 +301,23 @@ hr{
      margin-bottom: 0;
              
     }
+    .curriculam-container{
+      flex-direction: column;
+
+    }
+       
+    .curriculam{
+      max-width:50%;
+      max-height: 50%;
+      padding: 70px;
+      gap: 0;
+      margin: 0;
+    } 
+    .curriculam-img{
+      padding:50px;
+    }
+    .icon{
+      display: none;
+    }
+    
   }
