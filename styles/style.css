@@ -17,7 +17,7 @@
       /* border: 1px solid blueviolet; */
     }
   /* header styles  */
-  .header, .navbar{
+  .header, .navbar, .hero{
     max-width: 1140px;
     margin: 0 auto;
   }
@@ -31,7 +31,7 @@
   }
   .header{
     position: relative;
-    padding: 0 2rem;
+    padding: 0 ;
     margin-top: 20px;
 
   }
@@ -91,7 +91,7 @@
     cursor: pointer;
   } 
   hr{
-    width:95%;
+    width:100%;
     height: 2px;
     border: 0 none;
     margin: 5px auto 20px auto; 
@@ -99,27 +99,109 @@
     cursor: pointer;
     display: none;
 
+  } 
+  /* hero style  */
+  .hero{
+    display: flex;
+    justify-content: space-between;
+       align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+    max-width: 1158px;
   }
+  .hero-contant{
+  max-width: 640px;
+    margin: 0 auto;
+   
+  }
+     
+    .hero-title{
+      font-weight: 700;
+      font-size: 3.5rem;
+     text-align: start;
+     margin-bottom: 20px;
+    }
+    .part-1{
+      color: orange;
+    } 
+    .part-3{
+      color: skyblue;
+    } 
+    .hero-description{
+      font-size: 1.25rem;
+      font-weight:400 ;
+      text-align: start;
+      margin-top: 24px;
+    }
+    .btn{
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: white;
+      background-color: black;
+      padding: 10px 47px;
+      border-radius: 12px;
+      margin-top: 24px;
+         }
+          
+      .hero-img{
+      max-width: 468px;
+    }
+
+
   /* responsive */
   @media screen and (max-width:576px){
     .navbar .links,
 .navbar .action-btn{
   display: none;
+}
+.header{
+  padding:7px;
 }  
 .navbar{
   width:100%;
-  padding: 0;
-} 
-
+  padding: 0px;
+  
+}  
 
 .logo a{
   display: none;
+ 
 }
 .navbar .toggle-btn{
   display: block;
 } 
 hr{
   display: block;
+ 
+}
+.hero{
+  flex-direction: column-reverse;
+  gap: 0;
+  /* max-width:50%; */
+  margin: 0;
+  margin-top: 0;
 }
 
+.hero-img{
+  max-width: 90%;
+  align-items: center;
+}
+  .hero-contant{
+  max-width:85%;
+}
+
+.btn{
+   margin-top: 4px;
+     }
+     .hero-description{
+     
+      margin-top:0px;
+    }
+    .hero-title{
+      font-weight:500;
+      font-size: 2rem;
+     margin-top: 10px;
+     margin-bottom: 0;
+             
+    }
   }
